@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+
+<head>
+    <meta charset="utf-8">
+
+    <script src="./index.js"></script>
+    <script src="./common.js"></script>
+
+    <link rel="manifest" href="./manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+    <link rel="preload" as="image" href="_assets/images/1782201786-logo.svg" fetchpriority="high">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./index.css">
+    <meta name="theme-color" content="">
+    <title>Grand Casino Bern | Echtes landbasiertes Casino</title>
+    <meta name="description"
+          content="Entdecken Sie Grand Casino Bern mit klaren, gästeorientierten Informationen über unsere reale landbasierte Casino-Marke.">
+    <link rel="canonical" href="https://grandcasino-bern.com">
+    <meta property="og:title" content="Grand Casino Bern | Echtes landbasiertes Casino">
+    <meta property="og:description"
+          content="Entdecken Sie Grand Casino Bern mit klaren, gästeorientierten Informationen über unsere reale landbasierte Casino-Marke.">
+    <meta property="og:url" content="https://grandcasino-bern.com">
+    <meta property="og:site_name" content="Grand Casino Bern | Echtes landbasiertes Casino">
+    <meta property="og:locale" content="de-CH">
+    <meta property="og:image" content="_assets/images/1782201767-main.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="grandcasino-bern.com">
+    <meta name="twitter:title" content="Grand Casino Bern | Echtes landbasiertes Casino">
+    <meta name="twitter:description"
+          content="Entdecken Sie Grand Casino Bern mit klaren, gästeorientierten Informationen über unsere reale landbasierte Casino-Marke.">
+    <meta name="twitter:image" content="_assets/images/1782201767-main.webp">
+    <meta name="twitter:image:width" content="1200">
+    <meta name="twitter:image:height" content="630">
+    <link rel="icon" href="_assets/images/1782201779-favicon.svg" type="image/x-icon" sizes="16x16">
+    <meta name="language" content="de-CH">
+    <link rel="apple-touch-icon" href="_assets/images/1782201761-favicon.svg" sizes="96x96">
+    <link rel="icon" href="_assets/images/1782201761-favicon.svg" type="image/webp" sizes="192x192">
+
+    <link rel="preload" href="_assets/images/1782201811-main.webp" as="image" fetchpriority="high">
+
+</head>
+
+<body>
+<svg
+        style="display: none"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 256 256"
+>
+    <symbol id="minus-icon" viewBox="0 0 256 256">
+        <path
+                fill="#B31413"
+                d="M228 128a12 12 0 0 1-12 12H40a12 12 0 0 1 0-24h176a12 12 0 0 1 12 12"
+        />
+    </symbol>
+</svg>
+
+<svg
+        style="display: none"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 32 32"
+>
+    <symbol id="globe-icon" viewBox="0 0 32 32">
+        <path
+                fill="#D5BD76"
+                d="M32.032 16c0-8.501-6.677-15.472-15.072-15.969-0.173-0.019-0.346-0.032-0.523-0.032-0.052 0-0.104 0.005-0.156 0.007-0.093-0.002-0.186-0.007-0.281-0.007-8.84 0-16.032 7.178-16.032 16.001s7.192 16.001 16.032 16.001c0.094 0 0.188-0.006 0.281-0.008 0.052 0.002 0.104 0.008 0.156 0.008 0.176 0 0.349-0.012 0.523-0.032 8.395-0.497 15.072-7.468 15.072-15.969zM29.049 21.151c-0.551-0.16-1.935-0.507-4.377-0.794 0.202-1.381 0.313-2.84 0.313-4.357 0-1.196-0.069-2.354-0.197-3.469 3.094-0.37 4.45-0.835 4.54-0.867l-0.372-1.050c0.695 1.659 1.080 3.478 1.080 5.386 0 1.818-0.352 3.555-0.987 5.151zM8.921 16c0-1.119 0.074-2.212 0.21-3.263 1.621 0.127 3.561 0.222 5.839 0.243v6.939c-2.219 0.021-4.114 0.111-5.709 0.234-0.22-1.319-0.34-2.715-0.34-4.154zM16.967 2.132c2.452 0.711 4.552 4.115 5.492 8.628-1.512 0.12-3.332 0.209-5.492 0.229v-8.857zM14.971 2.156v8.832c-2.136-0.021-3.965-0.109-5.502-0.226 0.96-4.457 3.076-7.836 5.502-8.606zM14.971 21.913l0 7.929c-2.263-0.718-4.256-3.705-5.293-7.719 1.492-0.11 3.253-0.189 5.292-0.21zM16.967 29.868l-0-7.955c2.061 0.020 3.814 0.102 5.288 0.217-1.019 4.067-3 7.076-5.288 7.738zM16.967 19.92l0-6.939c2.291-0.021 4.218-0.118 5.818-0.25 0.131 1.053 0.203 2.147 0.203 3.268 0 1.442-0.116 2.84-0.329 4.16-1.575-0.128-3.462-0.219-5.692-0.24zM28.588 9.81c-0.302 0.094-1.564 0.453-4.094 0.751-0.564-2.998-1.584-5.561-2.91-7.412 3.048 1.325 5.535 3.697 7.005 6.661zM11.213 2.831c-1.632 1.873-2.963 4.568-3.691 7.754-2.265-0.245-3.623-0.534-4.166-0.665 1.585-3.27 4.407-5.836 7.856-7.088zM2.614 11.787c0.385 0.104 1.841 0.467 4.549 0.766-0.155 1.107-0.24 2.26-0.24 3.447 0 1.509 0.136 2.96 0.383 4.334-2.325 0.251-3.755 0.552-4.396 0.706-0.607-1.566-0.944-3.264-0.944-5.041 0-1.467 0.228-2.883 0.649-4.213zM3.784 22.886c0.727-0.154 2.029-0.39 3.956-0.591 0.759 2.803 1.993 5.175 3.473 6.874-3.16-1.148-5.79-3.398-7.429-6.282v0zM21.583 28.849c1.195-1.665 2.14-3.907 2.728-6.525 1.982 0.227 3.226 0.494 3.853 0.652-1.5 2.596-3.808 4.669-6.581 5.873z">
+        </path>
+    </symbol>
+</svg>
+
+<svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="star-icon" viewBox="0 0 32 31">
+        <path d="M10.0431 24.5932L15.8898 21.0667L21.7365 24.6396L20.2052 17.9577L25.3559 13.5031L18.5811 12.8999L15.8898 6.58913L13.1985 12.8535L6.42371 13.4567L11.5744 17.9577L10.0431 24.5932ZM15.8898 25.4285L8.187 30.0687C7.84672 30.2853 7.49096 30.3781 7.11975 30.3471C6.74853 30.3162 6.42371 30.1925 6.1453 29.9759C5.86688 29.7594 5.65034 29.489 5.49566 29.1648C5.34099 28.8406 5.31005 28.4768 5.40286 28.0734L7.44456 19.3034L0.623417 13.4103C0.314068 13.1319 0.121034 12.8145 0.0443157 12.4581C-0.0324028 12.1017 -0.00951111 11.754 0.112991 11.415C0.235493 11.0759 0.421103 10.7975 0.669819 10.5797C0.918536 10.362 1.25882 10.2227 1.69067 10.1621L10.6927 9.37327L14.1729 1.11366C14.3276 0.742438 14.5676 0.464023 14.8931 0.278414C15.2185 0.0928044 15.5507 0 15.8898 0C16.2288 0 16.5611 0.0928044 16.8865 0.278414C17.2119 0.464023 17.452 0.742438 17.6067 1.11366L21.0869 9.37327L30.0889 10.1621C30.522 10.224 30.8623 10.3632 31.1098 10.5797C31.3572 10.7963 31.5428 11.0747 31.6666 11.415C31.7903 11.7553 31.8138 12.1036 31.7371 12.46C31.6604 12.8163 31.4667 13.1331 31.1562 13.4103L24.335 19.3034L26.3767 28.0734C26.4695 28.4756 26.4386 28.8394 26.2839 29.1648C26.1292 29.4902 25.9127 29.7606 25.6343 29.9759C25.3559 30.1912 25.0311 30.315 24.6598 30.3471C24.2886 30.3793 23.9329 30.2865 23.5926 30.0687L15.8898 25.4285Z" fill="#D5BD76"/>
+    </symbol>
+</svg>
+
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 256 256"
+>
+    <symbol id="plus-icon" viewBox="0 0 256 256">
+        <path
+                fill="#B31413"
+                d="M228 128a12 12 0 0 1-12 12h-76v76a12 12 0 0 1-24 0v-76H40a12 12 0 0 1 0-24h76V40a12 12 0 0 1 24 0v76h76a12 12 0 0 1 12 12"
+        />
+    </symbol>
+</svg>
+
+<svg
+        width="33"
+        height="32"
+        viewBox="0 0 33 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <symbol id="play-icon" viewBox="0 0 33 32">
+        <path
+                d="M16.8334 0.0786133C7.9606 0.0786133 0.767578 7.20678 0.767578 15.9998C0.767578 24.7929 7.9606 31.921 16.8334 31.921C25.7061 31.921 32.8992 24.7929 32.8992 15.9998C32.8992 7.20678 25.7061 0.0786133 16.8334 0.0786133ZM22.3861 16.8438L14.3532 21.8192C14.1907 21.9197 14.0059 21.9703 13.821 21.9703C13.6536 21.9703 13.4859 21.929 13.3342 21.8454C13.015 21.67 12.8169 21.3372 12.8169 20.9752V11.0244C12.8169 10.6625 13.015 10.3296 13.3342 10.1543C13.6533 9.97788 14.0436 9.98857 14.3532 10.1805L22.3861 15.1559C22.6796 15.3381 22.858 15.6568 22.858 15.9998C22.858 16.3428 22.6796 16.6616 22.3861 16.8438Z"
+                fill="#D5BD76"
+        />
+    </symbol>
+</svg>
+
+<svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <symbol id="information-outline" viewBox="0 0 20 20">
+        <path
+                d="M9 7H11V5H9V7ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10 0C8.68678 0 7.38642 0.258658 6.17317 0.761205C4.95991 1.26375 3.85752 2.00035 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C3.85752 17.9997 4.95991 18.7362 6.17317 19.2388C7.38642 19.7413 8.68678 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7362 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0ZM9 15H11V9H9V15Z"
+                fill="#636363"
+        />
+    </symbol>
+</svg>
+
+<div class="wrapper">
+
+    <header class="header" id="top">
+        <div class="headerBlock">
+
+            <!-- Logo -->
+            <div class="headerLogoContainer">
+                <a href="https://grandcasino-bern.com" aria-label="Main page">
+                    <img
+                            class="header__logo logo"
+                            src="_assets/images/1782201786-logo.svg"
+                            alt="Grand Casino Bern"
+                    />
+                </a>
+            </div>
+
+            <div class="navBlockMain">
+
+            <!-- Main Navigation -->
+            <nav>
+                <button class="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                </button>
+
+                <ul class="nav__list nav__list--header">
+
+                    <li><a href="index">index</a></li>
+                    <li><a href="restaurants">Restaurants</a></li>
+                    <li><a href="online">Online</a></li>
+                    <li><a href="vip">VIP</a></li>
+                    <li><a href="events">Events</a></li>
+                    <li><a href="uberuns">Über uns</a></li>
+                    <li><a href="nutzungsbedingungen">Nutzungsbedingungen</a></li>
+                    <li><a href="datenschutz">Datenschutz</a></li>
+                    <li><a href="faq">FAQ</a></li>
+
+                </ul>
+            </nav>
+                <!-- CTA buttons -->
+                <div class="btn__list">
+<!--                    <div class="nav__item">-->
+<!--                        <a-->
+<!--                                class="nav__link"-->
+<!--                                target="_blank"-->
+<!--                                href="casino.html?id=example-offer-id"-->
+<!--                                aria-label=""-->
+<!--                                id="navSignUp"-->
+<!--                        >-->
+<!--                            -->
+<!--                        </a>-->
+<!--                    </div>-->
+
+                    <div class="nav__item nav__itemLarge">
+                        <a
+                                class="nav__link nav__linkLarge"
+                                target="_blank"
+                                href="casino.html?id=example-offer-id"
+                                aria-label="Jetzt spielen"
+                                id="navPlayNow"
+                        >
+                            Jetzt spielen
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="main">
+        <section class="heroContainer">
+            <div class="hero">
+                <div class="heroBlock block">
+                    <div class="heroGroup">
+                        <div class="heroTextGroup">
+                            <p class="heroText heroTextDesktop">Exklusives Willkommensangebot von</p>
+                            <p class="heroText heroTextMobile">Exklusives Willkommensangebot von</p>
+                            <p class="heroText heroTextBonus" id="bonusText"></p>
+                        </div><a target="_blank" class="heroLink" id="bonusLink" href="/" aria-label="Spiel starten"><span
+                            class="heroButton btn btn--large">Bonus sichern</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="heroUnder">
+                <h1 class="heroText heroMainTitle">Offizieller Guide zum Grand Casino Bern</h1>
+            </div>
+        </section>
+        <div class="bonusesCircleContainer">
+            <section class="topCasino">
+                <div class="container">
+                    <div class="topCasinoBlock block">
+                        <h2 class="topCasinoTitle title"><span>Top-Casinos <span id="countryName"></span></span>
+                        </h2>
+                        <div class="topCasinoGroup" id="casinoCardContainer">
+                            <!-- Casino cards will be dynamically inserted here --></div><button
+                            class="topCasinoButton btn btn--large" id="showMoreButton"> Alle Casino </button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <div class="advantagesCircleContainer">
+            <section class="advantages">
+                <div class="container">
+                    <div class="advantagesBlock block">
+                        <div class="advantagesDescription">
+                            <h2 class="advantagesTitle title">Vorteile</h2>
+                            <ul class="advantagesList">
+                                <li class="providersGroup"></li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Grosse Slot‑Auswahl mit progressiven Jackpots netzwerkweit.</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Klassische Tische: Roulette, Blackjack, Punto Banco täglich.</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Poker: Cashgames und regelmässige Turniere vor Ort.</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Jackpots: Swiss Jackpot und Jackpot Mania.</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Crazy Daisy: Küche, Cocktails, Stil der 20er.</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Zentrale Lage: Tram 9, Kursaal‑Parking vergünstigt nachts.</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Membär‑Club: freier Eintritt, Rabatte, Boni, Events exklusiv.</p>
+                                </li>
+                                <li class="providersGroup">365 Tage geöffnet, Tischspiele ab 18:00, Eintritt CHF 10 inkl. Welcome‑Drink — ideal für After‑Work und Besucher. Es gibt Raucherbereiche mit Slots und eine klare Policy zur Sozialverantwortung.</li>
+                            </ul><a class="advantagesLink" id="advantagesLink" target="_blank" href="/" aria-label="Mehr erfahren"><span
+                                class="advantagesButton btn btn--large">Mehr erfahren</span></a>
+                        </div>
+                        <div class="advantagesMobile">
+                            <h2 class="advantagesTitle title advantagesAppTitle">Grand Casino Bern App</h2><img
+                                class="advantagesMobilePhone" src="_assets/images/1782202464-mobile.webp" title="Grand Casino Bern Mobile"
+                                alt="Grand Casino Bern App" />
+                            <div class="advantagesStoreGroup"><a href="/" id="appStoreLink" aria-label="Play game"
+                                                                 target="_blank"><img class="advantagesStore" width="181" height="53"
+                                                                                      src="./assets/images/advantages/app-store.webp" alt="iOs App " title="Grand Casino Bern App"/></a><a
+                                    href="/" id="googlePlayLink" aria-label="Play game" target="_blank"><img
+                                    class="advantagesStore" width="181" height="54"
+                                    src="./assets/images/advantages/google-play.webp" alt="android App Grand Casino Bern App" title="Grand Casino Bern App" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="games" id="games">
+                <div class="container">
+                    <div class="gamesBlock block">
+                        <h2 class="gamesTitle title"><span>Beliebte Spiele</span></h2>
+                        <div class="gamesGroup" id="gamesContainer"><!-- Games will be dynamically inserted here -->
+                        </div><a target="_blank" class="gamesLink" id="allGamesLink" href="/" aria-label="Alle Spiele"><span
+                            class="gamesButton btn btn--large">Alle Spiele</span></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="historyCircleContainer">
+            <section class="history">
+                <div class="container">
+                    <div class="historyBlock block">
+                        <h2 class="historyTitle title">Über Grand Casino Bern</h2>
+                        <div class="historyGroup">
+                            <div class="historyColumn">
+                                <div class="historyText">
+                                    <p class="historyDescription"></p>
+                                    <ul class="historyList">
+                                        <li class="historyItem">Swiss Jackpot: über 1 Mio. CHF.</li>
+                                        <li class="historyItem">Jackpot Mania Super: 100 000 CHF.</li>
+                                        <li class="historyItem">Mystery Jackpot: bis 30 000 CHF.</li>
+                                    </ul>
+                                    <p class="historyDescription">Das Grand Casino Bern ist ein modernes Stadtcasino im Kursaal Bern mit stilvollem Abendambiente. Geboten werden klassische Tischspiele und vielfältige Slots mit vernetzten Jackpots. Pokerfans finden Cashgames und regelmässige Turnierformate in angenehmer Atmosphäre. Die Crazy Daisy Kitchen Bar verbindet kreative Küche, Drinks und entspannten Speakeasy‑Vibe direkt am Floor.
+
+</p>
+                                </div>
+                            </div>
+                            <div class="historyColumn"><img class="historyImage"
+                                                            src="_assets/images/1782202510-desktop.webp" alt="Grand Casino Bern" title="Grand Casino Bern Desktop"/></div>
+                        </div>
+                        <p class="historyDescription">Zutritt erhalten volljährige Gäste mit amtlichem Ausweis; der Eintritt umfasst einen Willkommensdrink. Ausgewiesene Raucherbereiche und klare Besucherinfos erleichtern den ersten Besuch. Der Membär‑Club bietet Vorteile, Einladungen und sammelbare Boni für Stammgäste. Per Tram ist die Anreise komfortabel, Autofahrer nutzen die Parkgarage des Kursaals. Das Haus ist ganzjährig offen und ergänzt das Spiel regelmässig mit Events und Abendprogrammen. Betrieb und Spielerschutz stehen unter strenger Schweizer Aufsicht mit klarer Responsible‑Gaming‑Policy.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="historyCircleContainer">
+            <section class="history">
+                <div class="container">
+                    <div class="historyBlock block">
+                        <h2 class="historyTitle title">Grand Casino Bern: Stilvolles Spielerlebnis, Genuss und Entertainment</h2>
+                        <div class="historyDescription">
+<p>
+Im Grand Casino Bern begrüssen wir unsere Gäste in einer Atmosphäre, die elegantes Casino-Flair, modernes Entertainment und herzliche Gastfreundschaft verbindet. Unser Casino befindet sich im Kursaal und bietet ein stilvolles Ambiente für alle, die Roulette, Black Jack, Ultimate Texas Hold’em, Poker Cash Game, Spielautomaten und attraktive Jackpots erleben möchten. Wir sind an 365 Tagen im Jahr geöffnet: von Sonntag bis Donnerstag von 12:00 bis 02:00 Uhr sowie am Freitag und Samstag von 12:00 bis 04:00 Uhr. Unsere Live Table Games starten täglich ab 18:00 Uhr, während das Poker Cash Game jeweils am Donnerstag ab 19:00 Uhr sowie am Freitag und Samstag ab 20:00 Uhr gespielt wird. Für kulinarische Pausen zwischen den Spielen empfehlen wir unsere Crazy Daisy Kitchen Bar, die Restaurant, Bar und Roaring-Twenties-Stimmung charmant miteinander verbindet. Tagsüber geniessen unsere Gäste Snacks und Drinks an der Lounge Bar, abends wird die Crazy Daisy Kitchen Bar zum lebendigen Treffpunkt für Cocktails, Dinner und entspannte Gespräche. Wer seinen Aufenthalt verlängern möchte, findet im Swissôtel Kursaal Bern komfortable Zimmer, moderne Ausstattung, Gastronomie und direkten Zugang zu weiteren Angeboten im Kursaal. Unser Eventprogramm bringt zusätzliche Abwechslung mit Casino Quiz Night, BINGO, UNO Turnier, Ladies Night, Poker Events, Darts Turnier und saisonalen Erlebnis-Packages. Als Mitglied im Membär-Club profitierst Du bei jedem Besuch von attraktiven Vorteilen wie Punkten, Eintrittsbenefits, Welcome Drinks, Parking Benefits, Geburtstagsgeschenken und besonderen Einladungen. Wir verbinden Spiel, Genuss, Nightlife und Service zu einem Abend, der vom ersten Drink bis zum letzten Spielmoment in Erinnerung bleibt.
+</p>
+<br>
+<div style="width:100%; max-width:100%; overflow:hidden;">
+  <table style="width:100%; max-width:100%; border-collapse:collapse; table-layout:fixed; font-family:Arial, sans-serif; font-size:clamp(9px, 2.2vw, 14px); color:#ffffff; background:transparent;">
+    <tr>
+      <th style="width:34%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Zone
+      </th>
+      <th style="width:33%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Tage
+      </th>
+      <th style="width:33%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Zeit
+      </th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Casino Floor
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Sonntag bis Donnerstag
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        12:00–02:00 Uhr
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Casino Floor
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Freitag und Samstag
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        12:00–04:00 Uhr
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Spielautomaten & Touch-Bet
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Täglich
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Ab 12:00 Uhr bis Casinoschluss
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Live Table Games
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Täglich
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Ab 18:00 Uhr
+      </td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Poker Cash Game
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Donnerstag, Freitag, Samstag
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Do ab 19:00 Uhr, Fr/Sa ab 20:00 Uhr
+      </td>
+    </tr>
+  </table>
+</div>
+<br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Grand Casino Bern: Guest Service, Languages, Currency and Payouts
+</h3>
+<p>
+At Grand Casino Bern, we welcome every guest with professional service, clear guidance and a warm casino atmosphere from the moment of arrival. Our team supports visitors at check-in, at the casino cash desk, on the gaming floor, in the Crazy Daisy Kitchen Bar and during our events. We are happy to explain how Roulette, Black Jack, Ultimate Texas Hold’em, Poker Cash Game, slot machines, chips and tickets work, especially for guests who are visiting a casino for the first time. Our staff communicate in German, English and French, and we always aim to make the gaming experience easy to understand. Whether you want to play, watch, dine or enjoy the evening atmosphere, our team is ready to assist you with confidence and discretion.<br><br>
+The main currency at Grand Casino Bern is CHF, which can be used for chips, table games, slot machines and payouts. At the gaming tables, you can exchange CHF for chips directly with the croupier or at the casino cash desk. If you would like to use a foreign currency, our cashier will assist you at the main cash desk and explain the current exchange conditions. Slot machines are played with banknotes and tickets, making it easy to move credit from one machine to another. When you finish playing, the machine issues a ticket that can be used again, paid out at the cash desk or redeemed at a withdrawal terminal within the available payout limit.<br><br>
+Our payout process is designed to be clear, secure and efficient. Table game winnings are paid according to the rules of the relevant game, while slot machine credits are handled through ticket payout, cashier payout or withdrawal terminals. For jackpot winnings, we follow a structured procedure that combines fast service with security and proper identification. Winnings up to the defined cash payout level are usually handled in cash, while larger jackpot amounts can be processed by bank transfer for the amount above the cash threshold. Our cash desk team will guide you through each step so that every payout remains transparent and comfortable.<br><br>
+Winnings at Grand Casino Bern are paid out without casino tax deductions, so guests receive their eligible winnings in full according to the applicable payout rules. We apply all required identification, security and responsible gaming procedures before processing larger payouts. Our team will explain whether your payout is made in cash, by ticket redemption, via the cash desk or by bank transfer. This gives every guest a reliable and well-organised payout experience. For personal tax obligations outside the place of play, guests should follow the rules that apply to their own residence.
+</p>
+<br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Grand Casino Bern: Besuchsregeln, Dresscode und Anreise
+</h3>
+<p>
+Im Grand Casino Bern gestalten wir den Besuch so angenehm, stilvoll und sicher wie möglich. Der Zutritt ist ab 18 Jahren mit einem gültigen amtlichen Ausweis in physischer Form möglich. Am Eingang prüfen wir die Identität jedes Gastes, damit der Aufenthalt in unserem Casino zuverlässig, geordnet und verantwortungsvoll bleibt. Ein Besuch bei uns verpflichtet nicht zum Spielen: Du kannst auch die Atmosphäre geniessen, einen Drink nehmen, essen, ein Event besuchen oder Dir die Spiele erklären lassen. Unser Dresscode ist smart casual und passt perfekt zu einem entspannten Abend mit besonderem Ambiente. Der Eintritt beträgt CHF 10 und beinhaltet einen Welcome Drink in der Crazy Daisy Kitchen Bar. Der Eintritt ist bis 30 Minuten vor Casinoschluss möglich. Unser Casino befindet sich im fünften Stock des Kursaal-Gebäudes und ist mit Tram, Auto und Parking sehr gut erreichbar. Vom Hauptbahnhof bringt Dich Tram Nummer 9 direkt zur Haltestelle Kursaal. Für Autofahrer steht die Kursaal-Parkgarage zur Verfügung, und Membär-Club-Mitglieder profitieren je nach Level von attraktiven Parking Benefits.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Zutritt im Grand Casino Bern
+</h3>
+<ul>
+            <li>• Der Zutritt ist ab 18 Jahren mit gültigem amtlichem Ausweis möglich.</li>
+            <li>• Der Ausweis muss physisch vorliegen, ein Foto enthalten und die Identität klar bestätigen.</li>
+            <li>• Der Eintritt ist bis 30 Minuten vor Casinoschluss möglich.</li>
+            <li>• Der Eintritt von CHF 10 enthält einen Welcome Drink in der Crazy Daisy Kitchen Bar.</li>
+            <li>• Bei gültiger Spielsperre ist der Zutritt zum Casino nicht möglich.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Dresscode im Grand Casino Bern
+</h3>
+<ul>
+            <li>• Wir empfehlen smart casual Kleidung, die zum eleganten Ambiente unseres Casinos passt.</li>
+            <li>• Sakko und Krawatte sind nicht erforderlich.</li>
+            <li>• Gepflegte Freizeitkleidung ist willkommen, wenn sie stilvoll und ordentlich wirkt.</li>
+            <li>• Flipflops und Tanktops entsprechen nicht unserem Dresscode.</li>
+            <li>• Mäntel, grosse Taschen und ausgewählte persönliche Gegenstände können an der Garderobe abgegeben werden.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Sicherheit und Komfort
+</h3>
+<ul>
+            <li>• Unsere Regeln sorgen für eine ruhige, faire und angenehme Casino-Atmosphäre.</li>
+            <li>• Mobile Telefone werden im Tischspielbereich und an den Kassen nicht benutzt.</li>
+            <li>• Fotografieren und Filmen im Casino ist nach Absprache möglich.</li>
+            <li>• Rauchen ist ausschliesslich in den gekennzeichneten Bereichen erlaubt.</li>
+            <li>• Eigene Speisen und Getränke werden nicht in das Casino mitgebracht.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Anreise und Parking
+</h3>
+<ul>
+            <li>• Unser Casino befindet sich im fünften Stock des Kursaal-Gebäudes.</li>
+            <li>• Mit Tram Nummer 9 erreichst Du die Haltestelle Kursaal bequem ab Hauptbahnhof.</li>
+            <li>• Für Autofahrer steht die Kursaal-Parkgarage zur Verfügung.</li>
+            <li>• Membär-Club-Mitglieder profitieren je nach Level von günstigen oder kostenlosen Parking Benefits.</li>
+            <li>• Der Besuch lässt sich ideal mit Dinner, Drinks, Events oder einer Übernachtung im Swissôtel Kursaal Bern verbinden.</li>
+        </ul><br><h3 style = "font-weight: bold;font-size: 32px;">
+Grand Casino Bern Membär-Club: Punkte, Levels und exklusive Vorteile
+</h3>
+<p>
+Der Membär-Club im Grand Casino Bern ist unser Treueprogramm für Gäste, die bei jedem Besuch mehr erleben möchten. Die Registrierung ist kostenlos und direkt online oder am Check-In im Grand Casino Bern möglich. Das erste Level Friend steht Dir sofort offen und benötigt keine Statuspunkte. Bei Deinen Besuchen sammelst Du Saldo- und Statuspunkte, die Dir Zugang zu Benefits, höheren Levels und attraktiven Einlösemöglichkeiten geben. Saldopunkte können für Konsumation, Spielguthaben und Parking Benefits genutzt werden, während Statuspunkte Dein Membär-Level im Kalenderjahr bestimmen. Mit jedem höheren Level erwarten Dich mehr Vorteile wie Gratis-Eintritt, Welcome Drink, Parking, Restaurant-Benefits, Geburtstagsgeschenke, Garderobe, Erlebnis-Packages und exklusive Einladungen. Deine Membär-Club-Karte nutzt Du vor dem Spiel am Automaten, am Tischspiel oder bei Bestellungen in der Crazy Daisy Kitchen Bar. Den Punktestand kannst Du jederzeit an Spielautomaten oder am Check-In prüfen. Jeden dritten Dienstag im Monat bietet unser Membär-Day die Chance auf 3-fache Saldopunkte an Automaten und Live Game Tischen. So wird jeder Besuch im Grand Casino Bern persönlicher, komfortabler und noch lohnender.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Registrierung im Membär-Club
+</h3>
+<ul>
+            <li>• Kostenlose Anmeldung online oder direkt am Check-In im Grand Casino Bern.</li>
+            <li>• Das Level Friend ist sofort verfügbar und benötigt 0 Statuspunkte.</li>
+            <li>• Nach der Anmeldung erhältst Du Informationen zur Abholung Deiner Membär-Club-Karte.</li>
+            <li>• Für die Anmeldung werden persönliche Daten wie Name, Adresse, Geburtsdatum, E-Mail und Telefonnummer benötigt.</li>
+            <li>• Die Karte wird vor dem Spielen oder Konsumieren vorgezeigt, damit Punkte korrekt gesammelt werden.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Levels und Statuspunkte
+</h3>
+<ul>
+            <li>• Friend: 0 Statuspunkte pro Kalenderjahr, idealer Einstieg mit Teilnahme an Membär Jackpot und Wettbewerben.</li>
+            <li>• Pro: 10’000 Statuspunkte pro Kalenderjahr, mit erweiterten Club-Benefits.</li>
+            <li>• Prime: 50’000 Statuspunkte pro Kalenderjahr, mit zusätzlichen Vorteilen und attraktiven Club-Privilegien.</li>
+            <li>• Master: 250’000 Statuspunkte pro Kalenderjahr, mit mehr Komfort, Parking Benefits und exklusiveren Leistungen.</li>
+            <li>• Royal: 500’000 Statuspunkte pro Kalenderjahr, mit Premium-Vorteilen, Begleitpersonen-Benefits und besonderen Gutschriften.</li>
+            <li>• Insider: 1’500’000 Statuspunkte pro Kalenderjahr, unser höchstes Level mit maximalen Vorteilen und exklusiven Extras.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Punkte sammeln
+</h3>
+<ul>
+            <li>• 1 Punkt für jeden gesetzten CHF 1 an Spielautomaten.</li>
+            <li>• 1 Punkt für je CHF 2 Einsatz an Touch-Bet-Roulette-Terminals und Roulette-Automaten.</li>
+            <li>• 5 Punkte für jeden bezahlten CHF 1 in der Crazy Daisy Kitchen Bar.</li>
+            <li>• Bei American Roulette, Black Jack und Ultimate Texas Hold’em hängen Punkte von Spiel, Geschwindigkeit, Dauer und durchschnittlichem Einsatz ab.</li>
+            <li>• Beispiel: Mit CHF 25 durchschnittlichem Einsatz und 1 Stunde American Roulette sind etwa 385 Bonuspunkte möglich.</li>
+            <li>• Am Membär-Day gibt es jeden dritten Dienstag im Monat 3-fache Saldopunkte.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Punkte einlösen
+</h3>
+<ul>
+            <li>• 100 Punkte entsprechen 1 Stunde Parking in der Kursaalgarage.</li>
+            <li>• 500 Punkte entsprechen CHF 1 Konsumation an der Bar.</li>
+            <li>• 10’000 Punkte entsprechen CHF 10 Spielguthaben.</li>
+            <li>• Saldopunkte verfallen nicht und bleiben dauerhaft erhalten.</li>
+            <li>• Statuspunkte bestimmen Dein Level und starten zu Beginn jedes Kalenderjahres neu.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Benefits im Membär-Club
+</h3>
+<ul>
+            <li>• Membär Jackpot und Wettbewerbe für alle Levels.</li>
+            <li>• Entry Benefits vom regulären Eintritt bis zum Gratis-Eintritt auf höheren Levels.</li>
+            <li>• Birthday Gifts mit Gratis-Eintritt, Welcome Drink oder Saldopunkten von 10’000 bis 100’000 Punkten.</li>
+            <li>• Parking Benefits von CHF 2 pro Stunde bis zu kostenlosem Parking auf Top-Levels.</li>
+            <li>• Restaurant Benefits wie bis zu 20% Rabatt und erweiterte Dining-Vorteile.</li>
+            <li>• Saldopunkte-Gutschriften von 50’000, 200’000 oder 500’000 Punkten je nach Level.</li>
+            <li>• Erlebnis-Packages bis CHF 400 auf Royal und Casino Play & Stay bis CHF 800 auf Insider.</li>
+            <li>• Garderobe, Begleitpersonen-Vorteile und exklusive Einladungen für Premium-Membärs.</li>
+        </ul><br></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <section class="">
+            <div class="container">
+                <div class="sprovidersBlock block">
+                    <h2 class="sprovidersTitle title"> Software Providers </h2>
+                    <div class="sprovidersGroup" id="providersContainer">
+                        <!-- Provider images will be dynamically inserted here --></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="historyCircleContainer">
+            <section class="history">
+                <div class="container">
+                    <div class="historyBlock block">
+                        <h2 class="historyTitle title">Grand Casino Bern: Jackpots, Spielaktionen und saisonale Highlights</h2>
+                        <div class="historyDescription">
+<p>
+Im Grand Casino Bern bieten wir neben dem Membär-Club viele zusätzliche Highlights, die Deinen Besuch noch spannender machen. Dazu gehören Jackpots, optionale Side Bets, Spielguthaben-Aktionen, Turniere, Themenabende, Quiz-Events, BINGO, UNO Turnier, Ladies Night und saisonale Erlebnis-Packages. Unsere Jackpots reichen von kleinen, dynamischen Formaten bis zu grossen progressiven Gewinnchancen. Besonders beliebt sind Jackpot Mania Mini, Midi und Super, Mystery Jackpot, Swiss Jackpot, Bären Pokerjackpot sowie Blazing 7 Major und Minor. Bei Black Jack sorgen King’s Bounty, Perfect Pairs und Blazing 777 Blackjack Progressive für zusätzliche Spannung. Für Gäste, die Unterhaltung und Gesellschaft suchen, veranstalten wir Casino Quiz Night, BINGO, UNO Turnier, Darts Turnier und Casino Beginners Night. In der Crazy Daisy Kitchen Bar verbinden wir Dinner, Drinks und Casino-Flair zu einem runden Abendprogramm. Mit Blue Monday, Cash Twister und saisonalen Packages schaffen wir immer wieder neue Gründe für einen Besuch. Unsere Events eignen sich für Paare, Freunde, Teams und Gäste, die Grand Casino Bern spielerisch kennenlernen möchten. So wird jeder Besuch zu einer Mischung aus Spiel, Genuss, Entertainment und besonderen Momenten.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Jackpots im Grand Casino Bern
+</h3>
+<ul>
+            <li>• Swiss Jackpot: grosser progressiver Jackpot, dessen Betrag über CHF 1’000’000 liegen kann.</li>
+            <li>• Jackpot Mania Mini: kompakter Jackpot mit Maximalwert bis CHF 1’000.</li>
+            <li>• Jackpot Mania Midi: Jackpot mit Startwert CHF 1’000 und Maximalwert bis CHF 5’000.</li>
+            <li>• Jackpot Mania Super: grosses Jackpot-Format mit Startwert CHF 30’000 und Maximalwert bis CHF 100’000.</li>
+            <li>• Mystery Jackpot: überraschender Gewinnmoment mit besonderem Spannungseffekt.</li>
+            <li>• Membär Jackpot: zusätzliche Gewinnchance für Membär-Club-Mitglieder.</li>
+            <li>• Bären Pokerjackpot: Poker-orientierte Jackpot-Option für starke Kartenkombinationen.</li>
+            <li>• Blazing 7 Major und Minor: progressive Black-Jack-Jackpots rund um die Siebener-Kombinationen.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Spielboni und Side Bets
+</h3>
+<ul>
+            <li>• King’s Bounty: Black-Jack-Side-Bet von CHF 2 bis CHF 20 mit Top-Auszahlung bis 1’000:1.</li>
+            <li>• Perfect Pairs: optionale Black-Jack-Wette von CHF 2 bis CHF 50 für Paar-Kombinationen.</li>
+            <li>• Blazing 777 Blackjack Progressive: progressive Zusatzwette mit Auszahlungen bis CHF 5’000 oder Major Jackpot.</li>
+            <li>• Ultimate Texas Hold’em Trips: Bonuswette für Drilling oder bessere Pokerhand.</li>
+            <li>• Bären-Poker-Jackpot: zusätzliche Gewinnchance für Poker-Fans.</li>
+            <li>• Poker Cash Game: Blinds 5/5 und Buy-in von CHF 200 bis CHF 2’000.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Spezialangebote und Events
+</h3>
+<ul>
+            <li>• Blue Monday: Gratis-Eintritt, Welcome Drink und CHF 10 Spielguthaben für den folgenden Montag.</li>
+            <li>• Casino Quiz Night: Team-Event mit Welcome Drink, Chips & Nüssli, Gratis-Eintritt im Wert von CHF 10 und Packagepreis CHF 25.</li>
+            <li>• BINGO: regelmässiger Dienstagabend auf der Galerie mit attraktiven Preisen und Drink an der Golden Nugget Bar.</li>
+            <li>• UNO Turnier: Rundenformat mit Qualifikation, Top-32, Top-16, Halbfinale und Finale.</li>
+            <li>• Ladies Night: Apéro, Drinks, Styling Corner, Just for Fun Casino, Preise, CHF 10 Spielguthaben und Gratis-Eintritt.</li>
+            <li>• Darts Turnier: Event mit dem Dart Club Bern für Einsteiger und Fortgeschrittene.</li>
+            <li>• Casino Beginners Night: Roulette und Black Jack entspannt im Just-for-Fun-Format kennenlernen.</li>
+            <li>• Cash Twister: 15 Sekunden Action in der Windmaschine mit echtem Spielguthaben.</li>
+            <li>• Dinner & Play Packages: kulinarische Erlebnisse mit Casino-Besuch, Drinks und Spielspass.</li>
+        </ul><br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Grand Casino Bern: Beliebte Spiele, Live Tables und Jackpots
+</h3>
+<p>
+Im Grand Casino Bern erwartet Dich ein vielseitiger Gaming Floor mit klassischen Tischspielen, modernen Spielautomaten, Poker Cash Game und attraktiven Jackpot-Formaten. Besonders beliebt ist Roulette, denn bei American und Vegas Roulette verbinden sich Tradition, Spannung und klare Einsatzmöglichkeiten. Black Jack begeistert unsere Gäste mit direktem Spiel gegen den Croupier und Entscheidungen, die jede Runde lebendig machen. Ultimate Texas Hold’em bringt Poker-Feeling an den Casinotisch und kombiniert verdeckte Karten, Community Cards und taktische Spielzüge. Für Poker-Fans bieten wir das Poker Cash Game mit Blinds 5/5 und Buy-in von CHF 200 bis CHF 2’000. Unsere Spielautomaten sorgen mit vielfältigen Themen, Tickets, Jackpots und dynamischem Gameplay für abwechslungsreiche Unterhaltung. Wer zusätzliche Gewinnchancen sucht, findet Swiss Jackpot, Jackpot Mania, Mystery Jackpot, Bären Pokerjackpot sowie Blazing 7 Major und Minor. Auch neue Gäste sind bei uns bestens aufgehoben, denn unser Team erklärt die Spiele gerne verständlich und persönlich. So kannst Du Deinen Abend flexibel gestalten: Slots, Roulette, Black Jack, Poker, Drinks in der Crazy Daisy Kitchen Bar und danach wieder zurück auf den Floor. Grand Casino Bern verbindet Spielauswahl, Atmosphäre und Service zu einem Erlebnis, das jeden Besuch besonders macht.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Live Table Games
+</h3>
+<ul>
+            <li>• American Roulette: klassisches Roulette mit Einsätzen ab CHF 5 auf Straight Up.</li>
+            <li>• Vegas Roulette: dynamisches Roulette-Format mit Einsätzen ab CHF 2 auf Straight Up.</li>
+            <li>• Black Jack: Spiel gegen den Croupier mit Auszahlung 3:2 bei Black Jack.</li>
+            <li>• Ultimate Texas Hold’em: Poker-Variante gegen den Dealer mit Ante, Blind, Play und optionalen Bonuswetten.</li>
+            <li>• Poker Cash Game: Blinds 5/5, Buy-in CHF 200 bis CHF 2’000, jeweils Donnerstag, Freitag und Samstag.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Automaten und elektronische Spiele
+</h3>
+<ul>
+            <li>• Spielautomaten: moderne Slots mit abwechslungsreichen Themen, Tickets und Jackpot-Optionen.</li>
+            <li>• Touch-Bet Roulette: elektronisches Roulette für schnelles und individuelles Spiel.</li>
+            <li>• Lion Link: beliebter Slot-Style mit starker visueller Dynamik.</li>
+            <li>• Jackpot Machines: Automaten mit Jackpot Mania, Swiss Jackpot und Mystery Jackpot.</li>
+            <li>• Ticket System: Guthaben flexibel einsetzen, übertragen und am Cash Desk oder Terminal auszahlen lassen.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Jackpot- und Bonusspiele
+</h3>
+<ul>
+            <li>• Jackpot Mania Mini, Midi und Super: unterschiedliche Jackpot-Level bis CHF 100’000 Maximalwert.</li>
+            <li>• Mystery Jackpot: überraschende Gewinnchance auf gekennzeichneten Automaten.</li>
+            <li>• Swiss Jackpot: grosser progressiver Jackpot mit hohem Gewinnpotenzial.</li>
+            <li>• Blazing 777 Blackjack Progressive: Black-Jack-Side-Bet rund um Siebener-Kombinationen.</li>
+            <li>• King’s Bounty: Zusatzwette bei Black Jack mit Top-Auszahlung bis 1’000:1.</li>
+            <li>• Perfect Pairs: Side Bet auf Paare bei den ersten beiden Karten.</li>
+        </ul><br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Grand Casino Bern: Mindest- und Maximaleinsätze nach Spielbereich
+</h3>
+<p>
+Im Grand Casino Bern findest Du klare Einsatzbereiche für Roulette, Black Jack Side Bets, Poker Cash Game und ausgewählte Automatenfunktionen. Die genauen Limits können je nach Tisch, Spielzeit und Floor-Situation angezeigt werden, doch viele beliebte Formate haben feste und gut verständliche Bereiche. So kannst Du Deinen Casino-Abend flexibel planen, vom entspannten Einstieg bis zu höheren Einsätzen.
+</p>
+<br>
+<div style="width:100%; max-width:100%; overflow:hidden;">
+  <table style="width:100%; max-width:100%; border-collapse:collapse; table-layout:fixed; font-family:Arial, sans-serif; font-size:clamp(9px, 2.2vw, 14px); color:#ffffff; background:transparent;">
+    <tr>
+      <th style="width:38%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Spiel / Bereich
+      </th>
+      <th style="width:31%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Mindesteinsatz
+      </th>
+      <th style="width:31%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Maximaleinsatz
+      </th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">American Roulette – Straight Up</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 5</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 200</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">American Roulette – Even Chance</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 25</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 4’800</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Vegas Roulette – Straight Up</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 2</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 50</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Vegas Roulette – Even Chance</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 10</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 1’200</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Black Jack – King’s Bounty</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 2</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 20</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Black Jack – Perfect Pairs</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 2</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 50</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Poker Cash Game – Buy-in</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 200</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 2’000</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Slot Ticket Payout Terminal</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Nach Automatenguthaben</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Bis CHF 2’000</td>
+    </tr>
+  </table>
+</div><h3 style = "font-weight: bold;font-size: 32px;">
+Grand Casino Bern: Events, Entertainment und Nightlife
+</h3>
+<p>
+Im Grand Casino Bern verbinden wir Spiel, Events, Bar-Kultur und Nightlife zu einem lebendigen Abendprogramm. Unsere Gäste erleben regelmässig Casino Quiz Night, BINGO, UNO Turnier, Ladies Night, Darts Turnier, Poker Cash Game, Casino Beginners Night und saisonale Specials. Die Events finden in stilvoller Casino-Atmosphäre statt und passen ideal zu einem Abend mit Freunden, Kolleginnen, Teammitgliedern oder Gästen, die unser Casino neu entdecken möchten. Casino Quiz Night bringt Teamgeist, Wissen und Preise zusammen, während BINGO mit Welcome Drink an der Golden Nugget Bar und attraktiven Gewinnen begeistert. Das UNO Turnier sorgt mit Qualifikationsrunden, Top-32, Top-16, Halbfinale und Finale für sportliche Spannung. In der Crazy Daisy Kitchen Bar starten viele Gäste ihren Abend mit Dinner, Drinks und Roaring-Twenties-Flair. Besonders am Donnerstag, Freitag und Samstag entwickelt sich unser Casino zu einem lebendigen Nightlife-Treffpunkt mit Spielen, Poker, Cocktails und Lounge-Stimmung. Die Crazy Daisy Lounge & Bar bietet den passenden Rahmen für Drinks, Gespräche und entspannte Club-Atmosphäre. Mit Ladies Night, Casino Beginners Night und Cash Twister schaffen wir zusätzlich Formate, die spielerisch, zugänglich und unterhaltsam sind. Für private Feiern, Team-Events, Geburtstage, Polterabende und Firmenanlässe gestalten wir besondere Casino-Erlebnisse mit persönlichem Charakter.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Regelmässige Events
+</h3>
+<ul>
+            <li>• Casino Quiz Night: Team-Quiz mit Welcome Drink, Snacks, Preisen und lebendiger Casino-Atmosphäre.</li>
+            <li>• BINGO: Dienstagsevent auf der Galerie mit Golden Nugget Bar und attraktiven Preisen.</li>
+            <li>• UNO Turnier: Turnierformat mit Qualifikation, Top-32, Top-16, Halbfinale und Finale.</li>
+            <li>• Poker Cash Game: Live Poker jeweils Donnerstag, Freitag und Samstag.</li>
+            <li>• Darts Turnier: Wettbewerb mit dem Dart Club Bern für alle Spielniveaus.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Nightlife und Bar-Erlebnisse
+</h3>
+<ul>
+            <li>• Crazy Daisy Kitchen Bar: Restaurant, Cocktails, Snacks und Roaring-Twenties-Stimmung direkt im Casino.</li>
+            <li>• Crazy Daisy Lounge & Bar: Lounge-Atmosphäre für Drinks, Gespräche und späte Casino-Abende.</li>
+            <li>• Golden Nugget Bar: Event-Bar bei ausgewählten Formaten wie BINGO.</li>
+            <li>• Weekend Casino Nights: Donnerstags, freitags und samstags mit besonders lebendiger Abendstimmung.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Spezialformate
+</h3>
+<ul>
+            <li>• Ladies Night: Apéro, Drinks, Styling Corner, Just for Fun Casino, Preise und CHF 10 Spielguthaben.</li>
+            <li>• Casino Beginners Night: Black Jack und Roulette entspannt kennenlernen.</li>
+            <li>• Cash Twister: 15 Sekunden Action in der Windmaschine mit echtem Spielguthaben.</li>
+            <li>• Dinner & Play Packages: Kulinarik, Drinks und Casino-Spannung in einem Erlebnis.</li>
+            <li>• Private Events: Team-Events, Geburtstage, Polterabende und Firmenanlässe im Casino-Ambiente.</li>
+        </ul><br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Grand Casino Bern: Bars, Restaurants, Hotel und Genussmomente
+</h3>
+<p>
+Im Grand Casino Bern gehört Genuss genauso zum Abend wie Spiel, Spannung und Entertainment. Unsere Crazy Daisy Kitchen Bar ist Restaurant und Bar im Stil der Roaring Twenties und liegt direkt im Herzen unseres Casinos. Hier geniesst Du Cocktails, Drinks, Snacks, Dinner, Lunch-Angebote und spezielle Dining-Packages, ohne die Casino-Atmosphäre zu verlassen. Am Tag bietet die Lounge Bar Snacks und Drinks, am Abend wird die Crazy Daisy Kitchen Bar zum stilvollen Treffpunkt für Gäste, die vor oder zwischen den Spielen entspannen möchten. Für zusätzliche kulinarische Vielfalt bietet der Kursaal weitere Restaurants und Bar-Erlebnisse. Im Giardino Restaurant & Bar erwarten Dich mediterrane Spezialitäten, saisonale Gerichte und private Dining-Möglichkeiten. Das Restaurant Yù begeistert mit Asian Dream Buffet, Sushi, Dim Sum, Peking Duck sowie vegetarischen und veganen Gerichten. Je nach Saison ergänzt der Rooftop Grill das Angebot mit Grillgerichten, Burgers, Starters und besonderer Aussicht. Wer den Abend verlängern möchte, findet im Swissôtel Kursaal Bern moderne Zimmer, komfortable Ausstattung, Fitness und direkte Nähe zu Casino, Restaurants und Events. So verbinden wir Spiel, Kulinarik, Drinks und Erholung zu einem vollständigen Grand Casino Bern Erlebnis.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Bars im Grand Casino Bern
+</h3>
+<ul>
+            <li>• Crazy Daisy Kitchen Bar: Restaurant und Bar mit Roaring-Twenties-Flair, Cocktails, Dinner und Snacks.</li>
+            <li>• Lounge Bar: Snacks und Drinks tagsüber, ideal für eine entspannte Pause im Casino.</li>
+            <li>• Crazy Daisy Lounge & Bar: Abendliche Lounge-Stimmung für Drinks, Gespräche und Casino-Nightlife.</li>
+            <li>• Golden Nugget Bar: Event-Bar bei ausgewählten Formaten wie BINGO.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Restaurants und Dining-Packages
+</h3>
+<ul>
+            <li>• Daisy’s Dinner & Play: Dining-Package mit Burger-Genuss und anschliessendem Spielspass.</li>
+            <li>• The Chicago Outfit Dinner: kulinarisches Package mit hochwertigem Dinner und Casino-Erlebnis.</li>
+            <li>• Giardino Restaurant & Bar: mediterrane Küche, saisonale Gerichte und stilvolles Ambiente.</li>
+            <li>• Restaurant Yù: Asian Dream Buffet mit Sushi, Dim Sum, Peking Duck und pflanzlichen Optionen.</li>
+            <li>• Sushi&Co.: ausgewählte japanische Spezialitäten und frische Sushi-Kreationen.</li>
+            <li>• Rooftop Grill: saisonales Rooftop-Dining mit Grillgerichten, Burgers und Sunset-Stimmung.</li>
+            <li>• Brunch & Play: Wochenendformat mit Brunch und anschliessendem Besuch im Grand Casino Bern.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Hotel und Erholung
+</h3>
+<ul>
+            <li>• Swissôtel Kursaal Bern: modernes Hotel direkt beim Casino für Stay & Play, Business und Weekend Escape.</li>
+            <li>• Rooms & Suites: zeitgemässes Design, komfortable Ausstattung und ruhige Atmosphäre.</li>
+            <li>• Fitness und Komfort: ideale Ergänzung für Gäste, die den Abend mit Erholung verbinden möchten.</li>
+            <li>• All-in-One-Erlebnis: Casino, Restaurants, Bars, Events und Hotel unter einem Dach.</li>
+        </ul><br></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="faq">
+            <div class="container">
+                <div class="faqBlock block">
+                    <h2 class="faqTitle title"><span>FAQ </span></h2>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="gibt_es_touchbet_roulette_im_grand_casino_bern"/><label
+                            class="faqLabel" for="gibt_es_touchbet_roulette_im_grand_casino_bern">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Gibt es Touchbet Roulette im Grand Casino Bern? </span></label>
+                        <div class="faqContent">
+                            <p>Ja. In unserem Casino gibt es Touchbet Roulette-Automaten.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="ab_welchem_einsatz_ist_touchbet_roulette_mglich"/><label
+                            class="faqLabel" for="ab_welchem_einsatz_ist_touchbet_roulette_mglich">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Ab welchem Einsatz ist Touchbet Roulette möglich? </span></label>
+                        <div class="faqContent">
+                            <p>Touchbet Roulette ist bereits ab CHF 1.– möglich.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="gibt_es_jackpots_im_grand_casino_bern"/><label
+                            class="faqLabel" for="gibt_es_jackpots_im_grand_casino_bern">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Gibt es Jackpots im Grand Casino Bern? </span></label>
+                        <div class="faqContent">
+                            <p>Ja. Unser Casino bietet verschiedene Jackpot-Möglichkeiten.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="welche_jackpotnamen_werden_im_grand_casino_bern_genannt"/><label
+                            class="faqLabel" for="welche_jackpotnamen_werden_im_grand_casino_bern_genannt">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Welche Jackpot-Namen werden im Grand Casino Bern genannt? </span></label>
+                        <div class="faqContent">
+                            <p>Zu den genannten Jackpots gehören unter anderem Swiss Jackpot, Mystery Jackpot, Bären Pokerjackpot, Blazing 7 Major, Blazing 7 Minor und Jackpot Mania.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="footerContainer">
+        <div class="footerTop">
+            <div class="footerLogoContainer"><a href="https://grandcasino-bern.com" aria-label="Main page"><img class="footer__logo"
+                                                                                                     src="_assets/images/1782201796-logo.svg" alt="" width="140"
+                                                                                                     height="48" /></a></div>
+            <div class="footerPay">
+                <div class="payBlock"><img class="payElementGrey"
+                                           src="./assets/images/footer/payment/masterCard.svg" alt="MasterCard" /><img
+                        class="payElementColor" src="./assets/images/footer/payment/masterCard--color.svg"
+                        alt="MasterCard" title="MasterCard in Grand Casino Bern" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/visa.svg"
+                                           alt="Visa" /><img class="payElementColor"
+                                                             src="./assets/images/footer/payment/visa--color.svg" alt="Visa" title="Visa in Grand Casino Bern" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/neteller.svg"
+                                           alt="Neteller" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/neteller--color.svg" alt="Neteller" title="Neteller in Grand Casino Bern" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/skrill.svg"
+                                           alt="Skrill" /><img class="payElementColor"
+                                                               src="./assets/images/footer/payment/skrill--color.svg" alt="Skrill" title="Skrill in Grand Casino Bern" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/bitcoin.svg"
+                                           alt="Bitcoin" /><img class="payElementColor"
+                                                                src="./assets/images/footer/payment/bitcoin--color.svg" alt="Bitcoin" title="Bitcoin in Grand Casino Bern" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/litecoin.svg"
+                                           alt="Litecoin" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/litecoin--color.svg" alt="Litecoin" title="Litecoin in Grand Casino Bern" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/ethereum.svg"
+                                           alt="Etherium" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/ethereum--color.svg" alt="Etherium" title="Etherium in Grand Casino Bern" /></div>
+            </div>
+        </div>
+        <div class="footerMiddle">
+            <div class="footerOperator">
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gpwa.svg" alt="GPWA" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gpwa--color.svg"
+                        alt="GPWA" title="GPWA in Grand Casino Bern" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gambleaware.svg" alt="Gamble Aware" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gambleaware--color.svg"
+                        alt="Gamble Aware" title="Gamble Aware in Grand Casino Bern" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gamcare.svg" alt="Game care" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gamcare--color.svg"
+                        alt="Game care" title="Game care in Grand Casino Bern" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gambling-therapy.svg" alt="Gambling Therapy" /><img
+                        class="operatorElementColor"
+                        src="./assets/images/footer/operator/gambling-therapy--color.svg" alt="Gambling Therapy" title="Gambling Therapy in Grand Casino Bern" />
+                </div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gamban.svg" alt="Gamban" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gamban--color.svg"
+                        alt="Gamban" title="Gamban in Grand Casino Bern" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/betblocker.svg" alt="BetBlocker" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/betblocker--color.svg"
+                        alt="BetBlocker" title="BetBlocker in Grand Casino Bern" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/itech_labs.svg" alt="ITech Labs" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/itech_labs--color.svg"
+                        alt="ITech Labs" title="ITech Labs in Grand Casino Bern" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/ecogra.svg" alt="Ecogra" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/ecogra--color.svg"
+                        alt="Ecogra" title="Ecogra in Grand Casino Bern" /></div>
+            </div>
+        </div>
+        <div class="footerNavBlock">
+            <nav>
+                <ul class="nav__list--footer">
+                    <li class="footer__navItem"><a href="index">index</a></li>
+                    <li class="footer__navItem"><a href="restaurants">Restaurants</a></li>
+                    <li class="footer__navItem"><a href="online">Online</a></li>
+                    <li class="footer__navItem"><a href="vip">VIP</a></li>
+                    <li class="footer__navItem"><a href="events">Events</a></li>
+                    <li class="footer__navItem"><a href="uberuns">Über uns</a></li>
+                    <li class="footer__navItem"><a href="nutzungsbedingungen">Nutzungsbedingungen</a></li>
+                    <li class="footer__navItem"><a href="datenschutz">Datenschutz</a></li>
+                    <li class="footer__navItem"><a href="faq">FAQ</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="footerBottom">
+            <div class="footerBottomGroup">
+                <p class="footerBottomAge">18+</p>
+                <p class="footerBottomCopyright">Copyright © <span class="js-current-year"></span> Grand Casino Bern </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var playButtonName = "#play-icon";
+    var informationOutlineName =
+        "#information-outline";
+    var topCasinoButtonText = "Bonus sichern";
+    var welcomeBonusText = "Willkommensbonus";
+    var bonusDetailsButtonText = "";
+    var playNowText = "Jetzt spielen";
+    var maximumAmountText = "";
+    var wagerText = "";
+    var bonusCodeText = "";
+    var depositText = "";
+    var casinoName = "Grand Casino Bern";
+</script>
+
+</body>
+</html>
